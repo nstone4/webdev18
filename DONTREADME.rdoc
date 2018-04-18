@@ -1,1 +1,4 @@
 Put changes made into this doc and any errors that need to be addressed to fix problems
+
+git push 
+#on command line to push to github
