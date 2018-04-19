@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+  devise_for :users
+  resources :photo_tests
+  root 'welcome#home'
 
-  get 'about', to: 'pages#about'
+  get 'about', to: 'welcome#about'
 
 end

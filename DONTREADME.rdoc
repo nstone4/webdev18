@@ -1,4 +1,73 @@
 Put changes made into this doc and any errors that need to be addressed to fix problems
 
-git push 
-#on command line to push to github
+rails s -b 0.0.0.0
+#run app
+
+git add -A
+#save all changes
+
+git commit -m "you message here"
+save on github
+
+git push
+#push to github
+
+git push heroku master
+#push everything to heroku
+
+
+
+
+............db.............
+
+rails generate scaffold MyTable myvariable:datatype myvar2:datatype ... (singular)
+#for FOREIGN KEYS ---> 'keyname:references'
+
+rails generate migration create_phototest2
+#rails generate migration create_mytable
+
+go to db->migrate->xxxxxx_create_mytable
+in the do loop add items with 't.datatype :dataname'
+
+then do 'rake db:migrate' in console
+
+
+
+rails destroy scaffold Name
+
+.....................routes.......................
+#in routes.rb add
+resources :mytable
+
+#add a controller called
+mytable_controller.rb
+class MytableController < ApplicationController
+    def new
+    ends
+end
+
+.........................forms............
+some stuff on forms in Section 4, Lecture 64
+
+.....................models..................
+has_many :whatevers
+#to create many relationship between records
+
+in your model thing.rb
+add 'validates :variable, presence: true
+#in order to make it NOT NULL
+can also add ', length: {minimum: 10, maximum: 200}
+^^^do this to users table too for username, email etc.
+,uniqueness: true {case_sensitive = false}
+#for unique value/entry
+
+,format: {with: VALID_EMAIL_REGEX}
+
+...............git branching...............
+git checkout -b create-branchnamess
+
+git checkout master
+
+git merge nameofbranch
+
+git push

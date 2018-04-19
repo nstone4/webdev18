@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= @photo_test.photo_id %>
+</p>
+
+<p>
+  <strong>Filename:</strong>
+  <%= @photo_test.filename %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @photo_test.user_id %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @photo_test.time %>
+</p>
+
+<p>
+  <strong>Caption:</strong>
+  <%= @photo_test.caption %>
+</p>
+
+<%= link_to 'Edit', edit_photo_test_path(@photo_test) %> |
+<%= link_to 'Back', photo_tests_path %>

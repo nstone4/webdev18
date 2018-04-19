@@ -1,0 +1,2 @@
+module PhotoTestsHelper
+end
