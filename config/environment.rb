@@ -12,9 +12,9 @@ ActionMailer::Base.smtp_settings = {
 
 :authentication => :plain,
 
-:user_name => ENV['apikey'],
+:user_name => ENV['SENDGRID_USERNAME'],
 
-:password => ENV['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'],
+:password => ENV['SENDGRID_PASSWORD'],
 
 :domain => 'heroku.com',
 
